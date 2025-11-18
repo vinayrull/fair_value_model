@@ -1,6 +1,6 @@
 # S&P 500 Fair Value Model
 
-A data-driven investment strategy to optimize long-term returns by modeling the daily fair value of the S&P 500 using polynomial regression.
+A data-driven investment strategy to optimise long-term returns by modelling the daily fair value of the S&P 500 using polynomial regression.
 
 ## Files
 - `fair_value_model.py` — Python script with full analysis and simulations  
@@ -28,10 +28,10 @@ python fair_value_model.py
 
 ## Results
 - Shows percentage gain and portfolio value for each strategy.  
-- Visualizes portfolio growth over time with a plot.  
+- Visualises portfolio growth over time with a plot.  
 
 ## Key Techniques
-- Polynomial regression modeling  
+- Polynomial regression modelling  
 - SQLite database management  
 - Time series analysis  
 - Investment strategy simulation
