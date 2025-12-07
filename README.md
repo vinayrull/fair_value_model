@@ -1,10 +1,10 @@
-# S&P 500 Fair Value Model
+# S&P 500 Pension Strategy
 
-A data-driven investment strategy to optimise long-term returns by modelling the daily fair value of the S&P 500 using polynomial regression.
+A data-driven investment strategy to try and optimise the long-term returns of my pension by fitting polynomial to S&P 500.
 
 ## Files
-- `fair_value_model.py` — Python script with full analysis and simulations  
-- `fair_value_data.sqlite` — SQLite database storing historical S&P 500 prices  
+- `pension_strategy.py` — Python script with full analysis and simulations  
+- `pension_strategy_data.sqlite` — SQLite database storing historical S&P 500 prices  
 
 ## How to Run
 1. Download both files to the same folder.  
@@ -14,13 +14,13 @@ pip install pandas numpy matplotlib yfinance
 ```
 3. Run the Python script:
 ```bash
-python fair_value_model.py
+python pension_strategy_model.py
 ```
 
 ## What the Script Does
 - Downloads 20 years of historical S&P 500 data.  
 - Stores and reads the data from an SQLite database.  
-- Builds a polynomial regression model to estimate daily fair value.  
+- Fit polynomial model to estimate daily fair value.  
 - Simulates two investment strategies:  
   1. Add $5 every day.  
   2. Add $5 every day if price is under model, else roll contribution forward.  
@@ -29,9 +29,3 @@ python fair_value_model.py
 ## Results
 - Shows percentage gain and portfolio value for each strategy.  
 - Visualises portfolio growth over time with a plot.  
-
-## Key Techniques
-- Polynomial regression modelling  
-- SQLite database management  
-- Time series analysis  
-- Investment strategy simulation
